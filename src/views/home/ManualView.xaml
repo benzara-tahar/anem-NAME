@@ -1,0 +1,25 @@
+﻿<UserControl x:Class="Anem.NAME.views.ManualView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+                    xmlns:local="clr-namespace:Anem.NAME.views"
+             xmlns:viewmodels="clr-namespace:Anem.NAME.ViewModels"
+             xmlns:dxmvvm="http://schemas.devexpress.com/winfx/2008/xaml/mvvm"
+             mc:Ignorable="d" 
+             d:DesignHeight="600" d:DesignWidth="900">
+
+    <Grid>
+        <StackPanel Margin="24">
+            <TextBlock x:Name="HEADER" TextWrapping="Wrap" Text="UTILISATION" Foreground="{DynamicResource AccentColorBrush}" FontSize="42.667" Margin="0,13,0,0" FontWeight="Bold" TextDecorations="{x:Null}"/>
+            <TextBlock x:Name="title1" TextWrapping="Wrap" Text="Utilisation de la NAME dans la pratique professionnelle des utilisateurs" Foreground="{DynamicResource AccentColorBrush}" FontSize="18.667" Margin="0,13,0,0"/>
+            <TextBlock x:Name="content1" TextWrapping="Wrap" FontSize="16" Foreground="#FF5A5A5A" TextAlignment="Justify"><Run Text="La NAME est utilisée par l'ensemble des partenaires de l'ANEM (entreprises, organismes de formation, Organismes privés de placement,…) et par aussi les conseillers de l'ANEM dans leur mission d'intermédiation."/><LineBreak/><Run/><LineBreak/><Run Text="C'est un outil d'intermédiation pour le conseiller et les autres utilisateurs. Elle s'intègre dans le Système de rapprochement pour la recherche d'offres et de candidatures. "/><LineBreak/><Run Text="Des opérations de recherche compréhensibles permettent l'identification du profil du demandeur d'emploi ainsi que l'offre d'emploi exprimée par les employeurs. "/></TextBlock>
+            <TextBlock x:Name="title1_Copy" TextWrapping="Wrap" Text="Utilisation de la NAME par un demandeur d'emploi" Foreground="{DynamicResource AccentColorBrush}" FontSize="18.667" Margin="0,13,0,0"/>
+            <TextBlock x:Name="content1_Copy" TextWrapping="Wrap" FontSize="16" Foreground="#FF5A5A5A" TextAlignment="Justify" Text="Le demandeur d'emploi peut consulter la NAME, via le site internet de l'ANEM, en procédant à la recherche directe par métier (mot clé), dans le cas où il connaît parfaitement son profil. Dans le cas échéant, il sera accompagné par le conseiller à l'emploi à travers un entretien professionnel afin de valider ses compétences et le positionner dans une fiche métier."/>
+            <TextBlock x:Name="title1_Copy1" TextWrapping="Wrap" Foreground="{DynamicResource AccentColorBrush}" FontSize="18.667" Margin="0,13,0,0"><Run Text="Utilisation de la NAME par un employeu"/><Run Text="r"/></TextBlock>
+            <TextBlock x:Name="content1_Copy1" TextWrapping="Wrap" FontSize="16" Foreground="#FF5A5A5A" TextAlignment="Justify" Text="L'employeur exprimera son offre en s'appuyant sur le contenu de la NAME, en indiquant le profil recherché sachant exactement son besoin. Cependant, s'il n'exprime pas avec exactitude le profil, c'est au conseiller de l'emploi de l'accompagner à reformuler son offre à travers une recherche en arborescence démontrant ainsi le secteur et le domaine où le métier est exercé."/>
+            <TextBlock x:Name="title1_Copy2" TextWrapping="Wrap" Foreground="{DynamicResource AccentColorBrush}" FontSize="18.667" Text="Utilisation de la NAME par le conseiller de l'emploi" Margin="0,13,0,0"/>
+            <TextBlock x:Name="content1_Copy2" TextWrapping="Wrap" FontSize="16" Foreground="#FF5A5A5A" TextAlignment="Justify" Text="Le conseiller dorénavant cernera le profil recherché en menant un meilleur accompagnement au profit des demandeurs d'emploi et une négociation pointue auprès des employeurs, basés essentiellement sur le contenu des fiches NAME. Il s'appuiera donc sur le mécanisme de recherche proposé par le système d'information, basé sur la NAME pour l'inscription d'une demande d'emploi et la prise d'une offre d'emploi."/>
+        </StackPanel>
+    </Grid>
+</UserControl>

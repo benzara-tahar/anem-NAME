@@ -1,0 +1,22 @@
+﻿<UserControl x:Class="Anem.NAME.views.PresentationView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+                    xmlns:local="clr-namespace:Anem.NAME.views"
+             xmlns:viewmodels="clr-namespace:Anem.NAME.ViewModels"
+             xmlns:dxmvvm="http://schemas.devexpress.com/winfx/2008/xaml/mvvm"
+             DataContext="{dxmvvm:ViewModelSource Type=viewmodels:AboutViewModel}"
+             mc:Ignorable="d" 
+             d:DesignHeight="600" d:DesignWidth="900">
+
+    <Grid>
+        <StackPanel Margin="24">
+            <TextBlock x:Name="HEADER" TextWrapping="Wrap" Text="PRESENTATION" Foreground="{DynamicResource AccentColorBrush}" FontSize="42.667" Margin="0,13,0,0" FontWeight="Bold" TextDecorations="{x:Null}"/>
+            <TextBlock x:Name="title1" TextWrapping="Wrap" Text="Contexte" Foreground="{DynamicResource AccentColorBrush}" FontSize="18.667" Margin="0,13,0,0"/>
+            <TextBlock x:Name="content1" TextWrapping="Wrap" FontSize="16" Foreground="#FF5A5A5A" TextAlignment="Justify" Text="L'Agence Nationale de l'Emploi (ANEM), dans le cadre de sa modernisation, met à la disposition des différents intervenants sur le marché de l'emploi la Nomenclature Algérienne des Métiers/Emplois (NAME). Un nouvel outil opérationnel commun permettant d'identifier aussi précisément que possible chaque métier existant en Algérie et d'appréhender finement les compétences recherchées par les entreprises. "/>
+            <TextBlock x:Name="title1_Copy" TextWrapping="Wrap" Text="Définition et Objectifs de la NAME" Foreground="{DynamicResource AccentColorBrush}" FontSize="18.667" Margin="0,13,0,0"/>
+            <TextBlock x:Name="content1_Copy" TextWrapping="Wrap" FontSize="16" Foreground="#FF5A5A5A" TextAlignment="Justify"><Run Text="La nomenclature Algérienne des Métiers/Emplois (NAME), a été conçue par l'ANEM avec la contribution d'un large réseau de partenaires (entreprises, organismes de formation, fédérations…), dans le but de constituer un référentiel national des métiers actualisé et exhaustif, permettant une meilleure identification des besoins en formation et favoriser le rapprochement des offres et des demandes d'emploi. Un langage commun sera donc instauré entre les différents acteurs du marché de l'emploi. "/><LineBreak/><Run Text="La NAME, permet d'identifier les métiers par secteur d'activité, et donc de se positionner sur le marché de l'emploi, selon une nouvelle approche « approche par compétence »."/></TextBlock>
+        </StackPanel>
+    </Grid>
+</UserControl>

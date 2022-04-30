@@ -1,0 +1,35 @@
+﻿<metro:MetroWindow 
+        xmlns:metro="http://metro.mahapps.com/winfx/xaml/controls"
+        GlowBrush="{DynamicResource AccentColorBrush}"
+        BorderThickness="1"
+        x:Class="Anem.NAME.ShellView"
+        TitleCaps="False"
+        xmlns:dragablz="clr-namespace:Dragablz;assembly=Dragablz"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:views="clr-namespace:Anem.NAME.views"
+        xmlns:viewmodels="clr-namespace:Anem.NAME.ViewModels"
+        xmlns:dxmvvm="http://schemas.devexpress.com/winfx/2008/xaml/mvvm"
+        DataContext="{dxmvvm:ViewModelSource Type=viewmodels:ShellViewModel}"
+        xmlns:local="clr-namespace:Anem.NAME"
+        mc:Ignorable="d"
+        Title="{Binding Version, StringFormat=Explorateur NAME version {0:n} }" Height="350" Width="525" WindowState="Maximized">
+   
+    <dragablz:TabablzControl TextElement.Foreground="{DynamicResource MaterialDesignBody}" BorderThickness="0"
+                             Background="{DynamicResource MaterialDesignPaper}" Margin="0,-1,0,1">
+        <dragablz:TabablzControl.InterTabController>
+            <dragablz:InterTabController />
+        </dragablz:TabablzControl.InterTabController>
+        <TabItem Header="Présentation">
+            <views:HomeView  Margin="8" />
+        </TabItem>
+        <TabItem Header="NAME">
+            <views:NameTreeView Margin="8" />
+        </TabItem>
+        <TabItem Header="A propos">
+            <views:AboutView Margin="8" />
+        </TabItem>
+    </dragablz:TabablzControl>
+</metro:MetroWindow >
