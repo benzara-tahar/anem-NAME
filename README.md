@@ -1,14 +1,13 @@
 # ANEM NAME
 
-Simple application to browse ANEM NAMES (Acronyme for **Nomenclature Algérienne des Métiers et de Emplois** which stands for **Algerian Nomenclature of Trades and Jobs**)
+A simple application to browse Anem NAMES (Acronym for **Nomenclature Algérienne des Métiers et de Emplois** which stands for **Algerian Nomenclature of Trades and Jobs**)
 [MVVM|WPF|MD]
 
 features:
 
-- ✔ MVVM
+- ✔ MVVM (ModelView-ViewModel)
 - ✔ Material Design with
-- ✔ Entity Framework
-- Sortable Tabs with [Dragablz](https://dragablz.net/)
+- ✔ Sortable Tabs with [Dragablz](https://dragablz.net/)
 - ✔ Smooth animations
 
 # Dev Environnement
